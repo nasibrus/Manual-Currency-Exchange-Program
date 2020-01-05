@@ -3,6 +3,11 @@ package sample;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
+ /**
+ *
+ * @author Ruslan Nasibov (@nasibrus)
+ */
+
 
 public class CurrencyExchange {
     public static void main(String[] args) {
