@@ -1,17 +1,16 @@
-package sample;
+package Util;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
- /**
+/**
  *
  * @author Ruslan Nasibov (@nasibrus)
  */
 
-
 public class CurrencyExchange {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
 
         double amount, code, euro, dollar, gbpound, rusruble, swedishkrone, danishkrone, bulgarianlev, canadiandollar, chineseyen, japaneseyen, norwegiankorune, czechkorune, manat;
         DecimalFormat df = new DecimalFormat("##.##");
@@ -19,32 +18,32 @@ public class CurrencyExchange {
 
         System.out.println("Which currency You want to Convert ? ");
 
-        System.out.println("1:Euro " +
-                "\n2:Dollar " +
-                "\n3:GB Pound " +
-                "\n4:RussianRuble " +
-                "\n5:Swedish Krone " +
-                "\n6:Danish Krone " +
-                "\n7:Bulgarian Lev " +
-                "\n8:Canadian Dollar " +
-                "\n9:Chinese Yen " +
-                "\n10:Japanese Yen " +
-                "\n11:Norwegian Korune " +
-                "\n12:Czech Korune" +
-                "\n13:Manat");
-        System.out.println("CZK RATES TO OTHER VALUES" +
-                            "\n 1 Euro = 25,45 CZK " +
-                            "\n 1 USD = 22,96 CZK " +
-                            "\n 1 GBP = 30,20 CZK " +
-                            "\n 100 RUB = 34,00 CZK " +
-                            "\n 1 SEK = 2,35 CZK " +
-                            "\n 1 DKK = 3,30 CZK " +
-                            "\n 1 BGN = 13,05 CZK " +
-                            "\n 1 CAD = 17,20 CZK " +
-                            "\n 1 CNY = 3,22 CZK " +
-                            "\n 100 JPY = 20,50 CZK " +
-                            "\n 1 NOK = 2,35 CZK" +
-                            "\n 1 AZN = 13,45 CZK");
+        System.out.println("1:Euro "
+                + "\n 2:Dollar "
+                + "\n 3:GB Pound "
+                + "\n 4:RussianRuble "
+                + "\n 5:Swedish Krone "
+                + "\n 6:Danish Krone "
+                + "\n 7:Bulgarian Lev "
+                + "\n 8:Canadian Dollar "
+                + "\n 9:Chinese Yen "
+                + "\n 10:Japanese Yen "
+                + "\n 11:Norwegian Korune "
+                + "\n 12:Czech Korune"
+                + "\n 13:Manat");
+        System.out.println("CZK RATES TO OTHER VALUES"
+                + "\n 1 Euro = 25,45 CZK "
+                + "\n 1 USD = 22,96 CZK "
+                + "\n 1 GBP = 30,20 CZK "
+                + "\n 100 RUB = 34,00 CZK "
+                + "\n 1 SEK = 2,35 CZK "
+                + "\n 1 DKK = 3,30 CZK "
+                + "\n 1 BGN = 13,05 CZK "
+                + "\n 1 CAD = 17,20 CZK "
+                + "\n 1 CNY = 3,22 CZK "
+                + "\n 100 JPY = 20,50 CZK "
+                + "\n 1 NOK = 2,35 CZK"
+                + "\n 1 AZN = 13,45 CZK");
 
         code = sc.nextInt();
 
@@ -52,7 +51,7 @@ public class CurrencyExchange {
         amount = sc.nextDouble();
 
         //For amount conversion
-        if(code==1){
+        if (code == 1) {
             //Euro to other
             dollar = amount * 1.1146;
             System.out.println("Your " + amount + " Euro is : " + df.format(dollar) + " Dollar");
@@ -79,7 +78,7 @@ public class CurrencyExchange {
             manat = amount * 1.8921;
             System.out.println("Your " + amount + " Euro is : " + df.format(manat) + " Manat");
         }
-        if(code==2){
+        if (code == 2) {
             //Dollar to other
             euro = amount * 0.8972;
             System.out.println("Your " + amount + " Dollar is : " + df.format(euro) + " Euro");
@@ -106,7 +105,7 @@ public class CurrencyExchange {
             manat = amount * 1.70;
             System.out.println("Your " + amount + " Dollar is : " + df.format(manat) + " Manat");
         }
-        if(code==3){
+        if (code == 3) {
             //GBPound to other
             dollar = amount * 1.3327;
             System.out.println("Your " + amount + " GB Pound is : " + df.format(dollar) + " Dollar ");
@@ -134,34 +133,34 @@ public class CurrencyExchange {
             System.out.println("Your " + amount + " GB Pound is : " + df.format(manat) + " Manat");
 
         }
-        if(code==4){
+        if (code == 4) {
             //100 RusRuble to other
-            dollar = (amount * 1.6038)/100;
+            dollar = (amount * 1.6038) / 100;
             System.out.println("Your " + amount + " Russian Ruble is : " + df.format(dollar) + " Dollar");
-            euro = (amount * 1.4321)/100;
+            euro = (amount * 1.4321) / 100;
             System.out.println("Your " + amount + " Russian Ruble is : " + df.format(euro) + " Euro");
-            gbpound = (amount * 1.1908)/100;
+            gbpound = (amount * 1.1908) / 100;
             System.out.println("Your " + amount + " Russian Ruble is : " + df.format(gbpound) + " GB Pound");
-            swedishkrone = (amount * 14.947)/100;
+            swedishkrone = (amount * 14.947) / 100;
             System.out.println("Your " + amount + " Russian Ruble is : " + df.format(swedishkrone) + " Swedish Krone");
-            danishkrone = (amount * 10.698)/100;
+            danishkrone = (amount * 10.698) / 100;
             System.out.println("Your " + amount + " Russian Ruble is : " + df.format(danishkrone) + " Danish Krone");
-            bulgarianlev = (amount * 2.8007)/100;
+            bulgarianlev = (amount * 2.8007) / 100;
             System.out.println("Your " + amount + " Russian Ruble is : " + df.format(bulgarianlev) + " Bulgarian Lev");
-            canadiandollar = (amount * 2.0998)/100;
+            canadiandollar = (amount * 2.0998) / 100;
             System.out.println("Your " + amount + " Russian Ruble is : " + df.format(canadiandollar) + " Canadian Dollar");
-            chineseyen = (amount * 11.1569)/100;
+            chineseyen = (amount * 11.1569) / 100;
             System.out.println("Your " + amount + " Russian Ruble is : " + df.format(chineseyen) + " Chinese Yen");
-            japaneseyen = (amount * 174.38)/100;
+            japaneseyen = (amount * 174.38) / 100;
             System.out.println("Your " + amount + " Russian Ruble is : " + df.format(japaneseyen) + " Japanes Yen");
-            norwegiankorune = (amount * 14.3843)/100;
+            norwegiankorune = (amount * 14.3843) / 100;
             System.out.println("Your " + amount + " Russian Ruble is : " + df.format(norwegiankorune) + " Norwegian Korune");
-            czechkorune = (amount * 36.4738)/100;
+            czechkorune = (amount * 36.4738) / 100;
             System.out.println("Your " + amount + " Russian Ruble is : " + df.format(czechkorune) + " Czech Korune");
-            manat = (amount * 2.71)/100;
+            manat = (amount * 2.71) / 100;
             System.out.println("Your " + amount + " Russian Ruble is : " + df.format(manat) + " Manat");
         }
-        if(code==5){
+        if (code == 5) {
             //SwedishKrone to other
             dollar = amount * 0.1068;
             System.out.println("Your " + amount + " Swedish Krone is : " + df.format(dollar) + " Dollar");
@@ -188,7 +187,7 @@ public class CurrencyExchange {
             manat = amount * 0.1813;
             System.out.println("Your " + amount + " Swedish Korune is : " + df.format(manat) + " Manat");
         }
-        if(code==6){
+        if (code == 6) {
             //Danish Krone to other
             dollar = amount * 0.1492;
             System.out.println("Your " + amount + " Danish Krone is : " + df.format(dollar) + " Dollar ");
@@ -215,7 +214,7 @@ public class CurrencyExchange {
             manat = amount * 0.2533;
             System.out.println("Your " + amount + " Danish Korune is : " + df.format(manat) + " Manat");
         }
-        if(code==7){
+        if (code == 7) {
             //Bulgarian Lev to other
             dollar = amount * 0.5699;
             System.out.println("Your " + amount + " Bulgarian Lev is : " + df.format(dollar) + " Dollar");
@@ -242,7 +241,7 @@ public class CurrencyExchange {
             manat = amount * 0.971;
             System.out.println("Your " + amount + " Bulgarian Lev is : " + df.format(manat) + " Manat");
         }
-        if(code==8){
+        if (code == 8) {
             //Canadian Dollar to other
             dollar = amount * 0.7607;
             System.out.println("Your " + amount + " Canadian Dollar is : " + df.format(dollar) + " Dollar");
@@ -269,7 +268,7 @@ public class CurrencyExchange {
             manat = amount * 1.2906;
             System.out.println("Your " + amount + " Canadian Dollar is : " + df.format(manat) + " Manat");
         }
-        if(code==9){
+        if (code == 9) {
             //Chinese Yen to other
             dollar = amount * 0.1429;
             System.out.println("Your " + amount + " ChineseYen is : " + df.format(dollar) + " Dollar");
@@ -296,34 +295,34 @@ public class CurrencyExchange {
             manat = amount * 0.2429;
             System.out.println("Your " + amount + " Chinese Yen is : " + df.format(manat) + " Manat");
         }
-        if(code==10){
+        if (code == 10) {
             //100 JapaneseYen to other
-            dollar = (amount * 0.9122)/100;
+            dollar = (amount * 0.9122) / 100;
             System.out.println("Your " + amount + " Japanese Yen is : " + df.format(dollar) + " Dollar");
-            euro = (amount * 0.8187)/100;
+            euro = (amount * 0.8187) / 100;
             System.out.println("Your " + amount + " Japanese Yen is : " + df.format(euro) + " Euro");
-            gbpound = (amount * 0.6845)/100;
+            gbpound = (amount * 0.6845) / 100;
             System.out.println("Your " + amount + " Japanese Yen is : " + df.format(gbpound) + " GB Pound");
-            rusruble = (amount * 57.347)/100;
+            rusruble = (amount * 57.347) / 100;
             System.out.println("Your " + amount + " Japanese Yen is : " + df.format(rusruble) + " Russian Ruble");
-            swedishkrone = (amount * 8.572)/100;
+            swedishkrone = (amount * 8.572) / 100;
             System.out.println("Your " + amount + " Japanese Yen is : " + df.format(swedishkrone) + " Swedish Krone");
-            danishkrone = (amount * 6.1354)/100;
+            danishkrone = (amount * 6.1354) / 100;
             System.out.println("Your " + amount + " Japanese Yen is : " + df.format(danishkrone) + " Danish Krone");
-            bulgarianlev = (amount * 1.6015)/100;
+            bulgarianlev = (amount * 1.6015) / 100;
             System.out.println("Your " + amount + " Japanese Yen is : " + df.format(bulgarianlev) + " Bulgarian Lev");
-            canadiandollar = (amount * 1.1997)/100;
+            canadiandollar = (amount * 1.1997) / 100;
             System.out.println("Your " + amount + " Japanese Yen is : " + df.format(canadiandollar) + " Canadian Dollar");
-            chineseyen = (amount * 6.3881)/100;
+            chineseyen = (amount * 6.3881) / 100;
             System.out.println("Your " + amount + " Japanese Yen is : " + df.format(chineseyen) + " Chinese Yen");
-            norwegiankorune = (amount * 8.2489)/100;
+            norwegiankorune = (amount * 8.2489) / 100;
             System.out.println("Your " + amount + " Japanese Yen is : " + df.format(norwegiankorune) + " Norwegian Korune");
-            czechkorune = (amount * 20.9165)/100;
+            czechkorune = (amount * 20.9165) / 100;
             System.out.println("Your " + amount + " Japanese Yen is : " + df.format(czechkorune) + " Czech Korune");
-            manat = (amount * 1.5541)/100;
+            manat = (amount * 1.5541) / 100;
             System.out.println("Your " + amount + " Japanese Yen is : " + df.format(manat) + " Manat");
         }
-        if(code==11){
+        if (code == 11) {
             //Norwegian Korune to other
             dollar = amount * 0.111;
             System.out.println("Your " + amount + " Norwegian Korune is : " + df.format(dollar) + " Dollar");
@@ -350,7 +349,7 @@ public class CurrencyExchange {
             manat = amount * 0.1892;
             System.out.println("Your " + amount + " Norwegian Korune is : " + df.format(manat) + " Manat");
         }
-        if(code==12){
+        if (code == 12) {
             //Czech Korune to other
             dollar = amount * 0.0437;
             System.out.println("Your " + amount + " Czech Korune is : " + df.format(dollar) + " Dollar");
@@ -378,7 +377,7 @@ public class CurrencyExchange {
             System.out.println("Your " + amount + " Czech Korune is : " + df.format(manat) + " Manat");
 
         }
-        if(code==13){
+        if (code == 13) {
             //Manat to other
             dollar = amount * 0.5882;
             System.out.println("Your " + amount + " Manat is : " + df.format(dollar) + " Dollar");
@@ -408,10 +407,3 @@ public class CurrencyExchange {
 
     }
 }
-
-
-
-
-
-
-
