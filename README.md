@@ -7,14 +7,17 @@ Well,We are defining currencies with double data type.And We are creating if met
   ![Screenshot (371)](https://user-images.githubusercontent.com/44650808/80868625-33cbc300-8c9c-11ea-90c5-17a1e9a78362.png)
 
   in that code we are converting 1 euro to other currencies.
-  <a><strong>DecimalFormat df = new DecimalFormat("##.##");</strong></a> when are printing,we are using this subclass for formatting Decimal Numbers.
+  
+  <p><strong>DecimalFormat df = new DecimalFormat("##.##");</strong></p> 
+  
+  when are printing,we are using this subclass for formatting Decimal Numbers.
   
 # Why is called Manual Currency Exchange?
 Because we are defining prices manually,and we are not using special frameworks to get data from server.
 
-<a><strong>Nasibov Ruslan</a></strong>
-<a><strong>Prague,Czech Republic 2020</a></strong>
-<a><strong>Student of Czech Technical University In Prague(Faculty Of Information)</a></strong>
+<p><strong>Nasibov Ruslan</strong></p>
+<p><strong>Prague,Czech Republic 2020</strong></p>
+<p><strong>Student of Czech Technical University In Prague(Faculty Of Information)</strong></p>
 
 
 
